@@ -1,0 +1,42 @@
+[
+    {
+        "productName": "Avocado",
+        "price": "50",
+        "from": "Mexico",
+        "nutrients": "Vitamin B, Vitamin K",
+        "quantity": "20",
+        "description": "Fresh avocados from Mexico. Packed with essential nutrients and delicious flavor.",
+        "id": "0",
+        "organic": true
+    },
+    {
+        "productName": "Strawberries",
+        "price": "25",
+        "from": "USA",
+        "nutrients": "Vitamin C, Fiber",
+        "quantity": "30",
+        "description": "Sweet and juicy strawberries from the United States. A delightful and healthy snack.",
+        "id": "1",
+        "organic": false
+    },
+    {
+        "productName": "Bananas",
+        "price": "15",
+        "from": "Ecuador",
+        "nutrients": "Potassium, Vitamin B6",
+        "quantity": "50",
+        "description": "Golden ripe bananas from Ecuador. Perfect for smoothies or snacking.",
+        "id": "2",
+        "organic": true
+    },
+    {
+        "productName": "Apples",
+        "price": "35",
+        "from": "Canada",
+        "nutrients": "Fiber, Vitamin C",
+        "quantity": "40",
+        "description": "Crisp and delicious apples from Canada. A healthy and refreshing choice.",
+        "id": "3",
+        "organic": false
+    }
+]

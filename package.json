@@ -1,0 +1,14 @@
+{
+  "name": "product-store",
+  "version": "1.0.0",
+  "description": "Project to learn routing and server creation in node.js",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "author": "Gustavo Coutino Ocampo",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}

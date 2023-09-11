@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Detail - {%PRODUCTNAME%}</title>
+    <style>
+      /* Reset default margin and padding */
+      body,
+      h1,
+      p {
+        margin: 0;
+        padding: 0;
+      }
+
+      /* Set background color and font for the entire page */
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f5f5f5;
+        color: #333;
+      }
+
+      /* Style the header */
+      header {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 20px 0;
+      }
+
+      /* Style the main content area */
+      main {
+        padding: 20px;
+      }
+
+      /* Style the product detail container */
+      .product-detail {
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+
+      /* Style product images */
+      .product-image {
+        max-width: 100%;
+        height: auto;
+      }
+
+      /* Style product titles */
+      .product-title {
+        font-size: 1.2rem;
+        margin: 10px 0;
+      }
+
+      /* Style product prices */
+      .product-price {
+        font-weight: bold;
+        color: #e44d26; /* Example color for price */
+      }
+
+      /* Style product details */
+      .product-from,
+      .product-nutrients,
+      .product-quantity,
+      .product-description,
+      .product-id {
+        margin: 10px 0;
+      }
+
+      /* Style the organic stamp */
+      .organic-stamp {
+        display: inline-block;
+        background-color: #4caf50; /* Green color for organic */
+        color: #fff; /* White text color */
+        padding: 5px 10px; /* Adjust padding as needed */
+        border-radius: 5px; /* Rounded corners */
+        font-weight: bold;
+        margin-top: 5px; /* Add some spacing between the stamp and product details */
+      }
+
+      /* Add hover effect to the product detail container */
+      .product-detail:hover {
+        transform: translateY(-5px);
+        transition: transform 0.2s ease-in-out;
+      }
+
+      /* Style the footer */
+      footer {
+        text-align: center;
+        padding: 20px 0;
+        background-color: #333;
+        color: #fff;
+      }
+
+      /* Style the "Back to Overview" link */
+      .back-to-overview-link {
+        display: inline-block;
+        margin-bottom: 20px; /* Add some spacing between the link and product details */
+        color: #007bff; /* Blue link color */
+        text-decoration: none; /* Remove underlines from the link */
+        font-weight: bold;
+      }
+
+      .back-to-overview-link:hover {
+        text-decoration: underline; /* Underline the link on hover */
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Product Detail</h1>
+    </header>
+    <main>
+      <div class="product-detail">
+        <a href="/overview" class="back-to-overview-link">Back to Overview</a>
+        <br />
+        <img src="{%IMAGE%}" alt="{%PRODUCTNAME%}" class="product-image" />
+        <h1 class="product-title">{%PRODUCTNAME%}</h1>
+        <p class="product-price">${%PRICE%}</p>
+        <p class="product-from">From: {%FROM%}</p>
+        <p class="product-nutrients">Nutrients: {%NUTRIENTS%}</p>
+        <p class="product-quantity">Quantity: {%QUANTITY%}</p>
+        <p class="product-description">{%DESCRIPTION%}</p>
+        <p class="product-id">Product ID: {%ID%}</p>
+        <p class="{%ORGANIC%}">Organic</p>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; 2023 Node.js Online Store</p>
+    </footer>
+  </body>
+</html>
